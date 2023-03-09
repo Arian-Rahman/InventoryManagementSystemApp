@@ -1,8 +1,0 @@
-/InventoryManagementSystemApp/obj
-/InventoryManagementSystemApp/bin
-/InventoryManagementSystemDomain/obj
-/InventoryManagementSystemDomain/bin
-/InventoryManagementSystemInfrastructure/obj
-/InventoryManagementSystemInfrastructure/bin
-/.vs
-InventoryManagementSystemApp/appsettings.json

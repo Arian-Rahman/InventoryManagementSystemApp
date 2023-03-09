@@ -1,6 +1,10 @@
 ﻿using InventoryManagementSystemDomain.Entity;
+using InventoryManagementSystemInfrastructure.DataContext;
 using InventoryManagementSystemInfrastructure.IService;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 
 namespace InventoryManagementSystemApp.Controllers
 {
@@ -8,9 +12,11 @@ namespace InventoryManagementSystemApp.Controllers
     {
         private readonly IUserService _user;
         private readonly ILoginService _loginService;
+        private readonly ApplicationDbContext _context;
 
-        public AppUserController(IUserService user, ILoginService loginService)
+        public AppUserController(ApplicationDbContext context,IUserService user, ILoginService loginService)
         {
+            _context = context;
             _user = user;
             _loginService = loginService;
         }
@@ -26,6 +32,50 @@ namespace InventoryManagementSystemApp.Controllers
                 throw;
             }
         }
+        /*
+                public async Task<IActionResult> ShowSearchForm()
+                {
+                    return View();
+
+                }
+
+                public async Task<IActionResult> ShowSearchResults(String SearchPhrase)
+                {
+                    return View("Index", await _context.AppUsers.Where(x => x.UserName.Contains(SearchPhrase)));
+                }
+        */
+
+           
+    [HttpGet]
+     public async Task<IActionResult> SearchResults(string UserSearch) //for search 
+       {
+       ViewData["GetDetails"] = UserSearch;
+       // var UserSearchInt = Convert.ToInt64(UserSearch);
+
+        if (!String.IsNullOrEmpty(UserSearch))
+       {
+         var searchQuerry = _context.AppUsers.Where(x => x.UserName.Equals(UserSearch)); //|| x.Id.Equals(UserSearchInt));
+         return View(await searchQuerry.AsNoTracking().ToListAsync());   
+
+        }
+            else return View("Index");
+
+ }
+
+
+        [HttpGet]
+        public async Task<IActionResult> SearchResultsId(int UserSearchId) //for search 
+        {
+            ViewData["GetDetailsId"] = UserSearchId;
+
+            var searchQuerry = _context.AppUsers.Where(x => x.Id.Equals(UserSearchId));
+
+            return View(await searchQuerry.AsNoTracking().ToListAsync());
+
+        }
+
+
+
         [HttpGet]
         public IActionResult Create()
         {
@@ -111,6 +161,58 @@ namespace InventoryManagementSystemApp.Controllers
 
                 throw;
             }
+
+
+
+
+
+
+                /* 
+            [HttpGet]
+            public async Task<IActionResult> GetById(int id)
+            {
+                    var user = await _user.Get(id); 
+                    return user == null ? NotFound() : Ok(user);
+             }
+
+
+            [HttpGet]
+            public async Task<IActionResult> GetByName(string name)
+                {
+                    var user = await _user.Find(name);
+                    return user == null ? NotFound() : Ok(user);
+                }
+
+                [HttpDelete]
+                public async Task<IActionResult> DeleteAll()
+                {
+                    var all = await _context.user.ToListAsync();
+                    _context.user.RemoveRange(all);
+                    await _context.SaveChangesAsync();
+                    return NoContent();
+
+                    //var Task = _context.user.FirstOrDefault(x => x.Id == id);
+
+
+
+                    /*
+                    _context.Entry(user).State = EntityState.Deleted;
+
+                    _context.SaveChanges();
+
+                    _context.EntityState.Deleted();
+
+                    */
+
+
+
+                /*var delUsers = _context.user.FromSql("DROP TABLE user");
+                _context.Database.ExecuteSql(`DROP TABLE user`);
+                return NoContent(); 
+                */
+
+
+            
 
         }
     }

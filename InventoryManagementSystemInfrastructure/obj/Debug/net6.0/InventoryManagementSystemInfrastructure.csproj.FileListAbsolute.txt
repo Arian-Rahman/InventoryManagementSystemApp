@@ -1,0 +1,17 @@
+C:\Projects\dot net core\Inventory management system\InventoryManagementSystemInfrastructure\bin\Debug\net6.0\InventoryManagementSystemInfrastructure.deps.json
+C:\Projects\dot net core\Inventory management system\InventoryManagementSystemInfrastructure\bin\Debug\net6.0\InventoryManagementSystemInfrastructure.runtimeconfig.json
+C:\Projects\dot net core\Inventory management system\InventoryManagementSystemInfrastructure\bin\Debug\net6.0\InventoryManagementSystemInfrastructure.dll
+C:\Projects\dot net core\Inventory management system\InventoryManagementSystemInfrastructure\bin\Debug\net6.0\InventoryManagementSystemInfrastructure.pdb
+C:\Projects\dot net core\Inventory management system\InventoryManagementSystemInfrastructure\bin\Debug\net6.0\InventoryManagementSystemDomain.dll
+C:\Projects\dot net core\Inventory management system\InventoryManagementSystemInfrastructure\bin\Debug\net6.0\InventoryManagementSystemDomain.pdb
+C:\Projects\dot net core\Inventory management system\InventoryManagementSystemInfrastructure\obj\Debug\net6.0\InventoryManagementSystemInfrastructure.csproj.AssemblyReference.cache
+C:\Projects\dot net core\Inventory management system\InventoryManagementSystemInfrastructure\obj\Debug\net6.0\InventoryManagementSystemInfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\dot net core\Inventory management system\InventoryManagementSystemInfrastructure\obj\Debug\net6.0\InventoryManagementSystemInfrastructure.AssemblyInfoInputs.cache
+C:\Projects\dot net core\Inventory management system\InventoryManagementSystemInfrastructure\obj\Debug\net6.0\InventoryManagementSystemInfrastructure.AssemblyInfo.cs
+C:\Projects\dot net core\Inventory management system\InventoryManagementSystemInfrastructure\obj\Debug\net6.0\InventoryManagementSystemInfrastructure.csproj.CoreCompileInputs.cache
+C:\Projects\dot net core\Inventory management system\InventoryManagementSystemInfrastructure\obj\Debug\net6.0\InventoryManagementSystemInfrastructure.csproj.CopyComplete
+C:\Projects\dot net core\Inventory management system\InventoryManagementSystemInfrastructure\obj\Debug\net6.0\InventoryManagementSystemInfrastructure.dll
+C:\Projects\dot net core\Inventory management system\InventoryManagementSystemInfrastructure\obj\Debug\net6.0\refint\InventoryManagementSystemInfrastructure.dll
+C:\Projects\dot net core\Inventory management system\InventoryManagementSystemInfrastructure\obj\Debug\net6.0\InventoryManagementSystemInfrastructure.pdb
+C:\Projects\dot net core\Inventory management system\InventoryManagementSystemInfrastructure\obj\Debug\net6.0\InventoryManagementSystemInfrastructure.genruntimeconfig.cache
+C:\Projects\dot net core\Inventory management system\InventoryManagementSystemInfrastructure\obj\Debug\net6.0\ref\InventoryManagementSystemInfrastructure.dll

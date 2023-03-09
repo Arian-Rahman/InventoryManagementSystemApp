@@ -1,0 +1,138 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Projects\\dot net core\\Inventory management system\\InventoryManagementSystemInfrastructure\\InventoryManagementSystemInfrastructure.csproj": {}
+  },
+  "projects": {
+    "C:\\Projects\\dot net core\\Inventory management system\\InventoryManagementSystemDomain\\InventoryManagementSystemDomain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\dot net core\\Inventory management system\\InventoryManagementSystemDomain\\InventoryManagementSystemDomain.csproj",
+        "projectName": "InventoryManagementSystemDomain",
+        "projectPath": "C:\\Projects\\dot net core\\Inventory management system\\InventoryManagementSystemDomain\\InventoryManagementSystemDomain.csproj",
+        "packagesPath": "C:\\Users\\arian\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\dot net core\\Inventory management system\\InventoryManagementSystemDomain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\arian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\dot net core\\Inventory management system\\InventoryManagementSystemInfrastructure\\InventoryManagementSystemInfrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\dot net core\\Inventory management system\\InventoryManagementSystemInfrastructure\\InventoryManagementSystemInfrastructure.csproj",
+        "projectName": "InventoryManagementSystemInfrastructure",
+        "projectPath": "C:\\Projects\\dot net core\\Inventory management system\\InventoryManagementSystemInfrastructure\\InventoryManagementSystemInfrastructure.csproj",
+        "packagesPath": "C:\\Users\\arian\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\dot net core\\Inventory management system\\InventoryManagementSystemInfrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\arian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Projects\\dot net core\\Inventory management system\\InventoryManagementSystemDomain\\InventoryManagementSystemDomain.csproj": {
+                "projectPath": "C:\\Projects\\dot net core\\Inventory management system\\InventoryManagementSystemDomain\\InventoryManagementSystemDomain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

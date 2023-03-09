@@ -8,7 +8,7 @@
 <h1>All User</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" >Create New</a>
 </p>
 
 <div>
@@ -19,9 +19,34 @@
         }
     }
 </div>
+
+
+<form method="get" asp-action="SearchResults">
+
+    <p>
+        <input type="search" placeholder="Enter Username" value="@ViewData["GetDetails"]" name="UserSearch" style="width:500px;" required/>
+        <input type="submit" value="Search by Username" class="btn" />
+    </p>
+
+</form>
+
+<form method="get" asp-action="SearchResultsId">
+
+    <p>
+        <input type="search" placeholder="Enter User Id" value="@ViewData["GetDetailsId"]" name="UserSearchId" style="width:500px;" required />
+        <input type="submit" value="Search by Id" class="btn btn-primary" />
+    </p>
+
+</form>
+
+
+
 <table class="table">
     <thead>
         <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.FullName)
             </th>
@@ -40,6 +65,9 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            <td class="dark">
+              @Html.DisplayFor(modelItem => item.Id)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.FullName)
             </td>
