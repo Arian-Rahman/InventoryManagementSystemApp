@@ -2,6 +2,35 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "AWSSDK.Core/3.7.105.20": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "AWSSDK.EC2/3.7.127.1": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.105.20, 4.0.0)"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.EC2.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.EC2.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -796,6 +825,58 @@
     }
   },
   "libraries": {
+    "AWSSDK.Core/3.7.105.20": {
+      "sha512": "ZHuTxP1J8g91+YSV0YLzm5te5lG+zkiUH/+NDHFpLf1cBD6iw2kUo5AkYEVxfEur1OTdYJxEZ5jDuOBE4pubkg==",
+      "type": "package",
+      "path": "awssdk.core/3.7.105.20",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "awssdk.core.3.7.105.20.nupkg.sha512",
+        "awssdk.core.nuspec",
+        "lib/net35/AWSSDK.Core.dll",
+        "lib/net35/AWSSDK.Core.pdb",
+        "lib/net35/AWSSDK.Core.xml",
+        "lib/net45/AWSSDK.Core.dll",
+        "lib/net45/AWSSDK.Core.pdb",
+        "lib/net45/AWSSDK.Core.xml",
+        "lib/netcoreapp3.1/AWSSDK.Core.dll",
+        "lib/netcoreapp3.1/AWSSDK.Core.pdb",
+        "lib/netcoreapp3.1/AWSSDK.Core.xml",
+        "lib/netstandard2.0/AWSSDK.Core.dll",
+        "lib/netstandard2.0/AWSSDK.Core.pdb",
+        "lib/netstandard2.0/AWSSDK.Core.xml",
+        "tools/account-management.ps1"
+      ]
+    },
+    "AWSSDK.EC2/3.7.127.1": {
+      "sha512": "6LUcVWVmwbdkU/saS6N47MndGA75VtBfH+74l6AWjMRYJSDE+pd3RXQepJSm905BlKm6dwDL5cSGec2X6x8pzw==",
+      "type": "package",
+      "path": "awssdk.ec2/3.7.127.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AWSSDK.EC2.CodeAnalysis.dll",
+        "awssdk.ec2.3.7.127.1.nupkg.sha512",
+        "awssdk.ec2.nuspec",
+        "lib/net35/AWSSDK.EC2.dll",
+        "lib/net35/AWSSDK.EC2.pdb",
+        "lib/net35/AWSSDK.EC2.xml",
+        "lib/net45/AWSSDK.EC2.dll",
+        "lib/net45/AWSSDK.EC2.pdb",
+        "lib/net45/AWSSDK.EC2.xml",
+        "lib/netcoreapp3.1/AWSSDK.EC2.dll",
+        "lib/netcoreapp3.1/AWSSDK.EC2.pdb",
+        "lib/netcoreapp3.1/AWSSDK.EC2.xml",
+        "lib/netstandard2.0/AWSSDK.EC2.dll",
+        "lib/netstandard2.0/AWSSDK.EC2.pdb",
+        "lib/netstandard2.0/AWSSDK.EC2.xml",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -2022,6 +2103,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AWSSDK.EC2 >= 3.7.127.1",
       "InventoryManagementSystemDomain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.14",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.14",
@@ -2071,6 +2153,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "AWSSDK.EC2": {
+            "target": "Package",
+            "version": "[3.7.127.1, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.14, )"

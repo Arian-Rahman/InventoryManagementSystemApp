@@ -78,6 +78,88 @@ namespace InventoryManagementSystemInfrastructure.Migrations
 
                     b.ToTable("AppUsers");
                 });
+
+            modelBuilder.Entity("InventoryManagementSystemDomain.Entity.Purchase", b =>
+                {
+                    b.Property<int>("PurchaseId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PurchaseId"), 1L, 1);
+
+                    b.Property<string>("Address")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("EntryBy")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<DateTime?>("EntryDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("PurchaseDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Remark")
+                        .HasMaxLength(800)
+                        .HasColumnType("nvarchar(800)");
+
+                    b.Property<string>("SupplierName")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("PurchaseId");
+
+                    b.ToTable("Purchases");
+                });
+
+            modelBuilder.Entity("InventoryManagementSystemDomain.Entity.PurchaseDetails", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("ItemCode")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<float>("ItemQty")
+                        .HasColumnType("real");
+
+                    b.Property<float>("ItemRate")
+                        .HasColumnType("real");
+
+                    b.Property<float>("ItemUnitId")
+                        .HasColumnType("real");
+
+                    b.Property<int>("PurchaseId1")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PurchaseId1");
+
+                    b.ToTable("PurchasDetails");
+                });
+
+            modelBuilder.Entity("InventoryManagementSystemDomain.Entity.PurchaseDetails", b =>
+                {
+                    b.HasOne("InventoryManagementSystemDomain.Entity.Purchase", "Purchase")
+                        .WithMany("PurchaseDetails")
+                        .HasForeignKey("PurchaseId1")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Purchase");
+                });
+
+            modelBuilder.Entity("InventoryManagementSystemDomain.Entity.Purchase", b =>
+                {
+                    b.Navigation("PurchaseDetails");
+                });
 #pragma warning restore 612, 618
         }
     }

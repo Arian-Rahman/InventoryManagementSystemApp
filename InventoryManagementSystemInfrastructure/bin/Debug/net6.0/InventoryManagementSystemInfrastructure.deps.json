@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "InventoryManagementSystemInfrastructure/1.0.0": {
         "dependencies": {
+          "AWSSDK.EC2": "3.7.127.1",
           "InventoryManagementSystemDomain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.14",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.14",
@@ -15,6 +16,25 @@
         },
         "runtime": {
           "InventoryManagementSystemInfrastructure.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.7.105.20": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.105.20"
+          }
+        }
+      },
+      "AWSSDK.EC2/3.7.127.1": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.105.20"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.EC2.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.127.1"
+          }
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -496,6 +516,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AWSSDK.Core/3.7.105.20": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZHuTxP1J8g91+YSV0YLzm5te5lG+zkiUH/+NDHFpLf1cBD6iw2kUo5AkYEVxfEur1OTdYJxEZ5jDuOBE4pubkg==",
+      "path": "awssdk.core/3.7.105.20",
+      "hashPath": "awssdk.core.3.7.105.20.nupkg.sha512"
+    },
+    "AWSSDK.EC2/3.7.127.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6LUcVWVmwbdkU/saS6N47MndGA75VtBfH+74l6AWjMRYJSDE+pd3RXQepJSm905BlKm6dwDL5cSGec2X6x8pzw==",
+      "path": "awssdk.ec2/3.7.127.1",
+      "hashPath": "awssdk.ec2.3.7.127.1.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",

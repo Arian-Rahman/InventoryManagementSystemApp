@@ -272,3 +272,5 @@ C:\Projects\dot net core\Inventory management system\InventoryManagementSystemAp
 C:\Projects\dot net core\Inventory management system\InventoryManagementSystemApp\obj\Debug\net6.0\InventoryManagementSystemApp.pdb
 C:\Projects\dot net core\Inventory management system\InventoryManagementSystemApp\obj\Debug\net6.0\InventoryManagementSystemApp.genruntimeconfig.cache
 C:\Projects\dot net core\Inventory management system\InventoryManagementSystemApp\obj\Debug\net6.0\ref\InventoryManagementSystemApp.dll
+C:\Projects\dot net core\Inventory management system\InventoryManagementSystemApp\bin\Debug\net6.0\AWSSDK.Core.dll
+C:\Projects\dot net core\Inventory management system\InventoryManagementSystemApp\bin\Debug\net6.0\AWSSDK.EC2.dll

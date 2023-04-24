@@ -18,5 +18,7 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\arian\.nuget\packages\microsoft.entityframeworkcore.tools\6.0.14</PkgMicrosoft_EntityFrameworkCore_Tools>
+    <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">C:\Users\arian\.nuget\packages\awssdk.core\3.7.105.20</PkgAWSSDK_Core>
+    <PkgAWSSDK_EC2 Condition=" '$(PkgAWSSDK_EC2)' == '' ">C:\Users\arian\.nuget\packages\awssdk.ec2\3.7.127.1</PkgAWSSDK_EC2>
   </PropertyGroup>
 </Project>
