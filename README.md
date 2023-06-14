@@ -1,4 +1,14 @@
-# InventoryManagementSystemApp
+# Inventory Management System App
+
+Made using .Net core , C# , Entity Framework, Javascript
+
+Freatures :
+*  Purchase Master Table 
+*  User Index table 
+*  Create , Edit , Delete functions 
+*  Log-in feature 
+
+
 ![Screenshot (785)](https://github.com/Arian-Rahman/InventoryManagementSystemApp/assets/48956945/7d2b05a5-04bb-44ff-9462-e91ee95d41db)
 
 
