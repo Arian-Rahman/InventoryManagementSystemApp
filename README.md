@@ -5,7 +5,8 @@ Made using .Net core , C# , Entity Framework, Javascript
 Freatures :
 *  Purchase Master Table 
 *  User Index table 
-*  Create , Edit , Delete functions 
+*  Create , Edit , Delete functions
+*  Search by Username or Id  
 *  Log-in feature 
 
 
